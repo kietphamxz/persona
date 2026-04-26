@@ -1,0 +1,55 @@
+html, body {
+    height: 100%; /* Ensures the body spans the full height of the viewport */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stacks children (header, main-container, footer) vertically */
+    min-height: 100vh; /* Ensures the body is at least the height of the viewport */
+}
+
+.persona {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.img_center {
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box1 {
+    flex:1;
+    height: 150px;
+    background-color: aqua;
+}
+
+.box2 {
+    flex: 1;
+    height: 150px;
+    background-color: aquamarine;
+}
+
+.box3 {
+    flex: 1;
+    height: 150px;
+    background-color: bisque;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row; /* Row layout for desktop */
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column; /* Switch to column for mobile */
+  }
+}
