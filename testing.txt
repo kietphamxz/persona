@@ -1,0 +1,2 @@
+Devices : Iphone, Safari, mobile device
+Test: Responsiveness, Accessibility, functionality.
